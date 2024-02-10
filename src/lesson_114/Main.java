@@ -10,6 +10,7 @@ public class Main {
             Cat cat2 = (Cat) arrayOfAnimals[0];
             Dog dog2 = (Dog) arrayOfAnimals[1];
         }catch (ClassCastException e){
+            //
             System.out.println("Mi poluchili exception");
         }
 
