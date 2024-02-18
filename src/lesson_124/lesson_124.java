@@ -1,3 +1,5 @@
+package lesson_124;
+
 import java.util.Arrays;
 
 public class lesson_124 {
