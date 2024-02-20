@@ -15,8 +15,11 @@ public class Main {
 
 // LESSON 129
         Stream<String> st4 = Stream.of("A", "K", "B", "C", "F", "A", "B", "W", "C");
-
         st4.distinct().forEach(x -> System.out.print(x + " "));
+
+// LESSON 130
+
+        System.out.println(st4.distinct().count());
 
     }
 }
