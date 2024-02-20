@@ -19,6 +19,10 @@ public class Main {
 
         List<Integer> limitFilteredList = list1.stream().filter(x -> x > 4).limit(3).collect(Collectors.toList());
         System.out.println(limitFilteredList);
+// Lesson 135 - skip()
+        System.out.println("Lesson 135 -----------------------------------------");
+        List<Integer> limitFilteredSkipList = list1.stream().filter(x -> x > 4).skip(3).limit(3).collect(Collectors.toList());
+        System.out.println(limitFilteredSkipList);
 
 
     }
