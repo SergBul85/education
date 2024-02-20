@@ -5,9 +5,9 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        Car car1 = new Car("BMW", 150);
+        Car car1 = new Car("BMW", 250);
         Car car2 = new Car("AUDI", 200);
-        Car car3 = new Car("MERC", 250);
+        Car car3 = new Car("MERC", 200);
         Car car4 = new Car("ZIL", 75);
 
         Owner owner1 = new Owner("Jhon Connor");
@@ -25,6 +25,17 @@ public class Main {
         owners.add(owner1);
 
         owners.stream().flatMap(owner -> owner.getCarsOfOwner().stream()).forEach(x -> System.out.println(x.getName()));
+// Lesson 132
+        System.out.println("Lesson 132 ----------------------------------");
+        List<Car> cars = new ArrayList<>();
+        cars.add(car1);
+        cars.add(car2);
+        cars.add(car3);
+        cars.add(car4);
+
+        Car firstCar = cars.stream().filter(x->x.getSpeed()==200).findFirst().get();
+
+        System.out.println("firstCar - " + firstCar);
 
     }
 }
